@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetacion</title>
+    <link rel="stylesheet" href="maquetacion.css">
+
+    <script>
+        function bsDolares(valNum) {
+        document.getElementById("inputDolares").value=valNum*0.14367816092;
+        }
+        function dolaresBs(valNum) {
+            document.getElementById("inputBs").value=valNum*6.96;
+        }
+ 
+        function myFunction() {  
+        var x,text;  
+        x = document.getElementById("nombre").value;  
+        
+            text= 'Bienvenido '+ x + ' al Segundo Examen, espero que la licenciada no te repruebe';  
+            document.getElementById("dato").style.fontSize = "22px";
+        document.getElementById("dato").innerHTML = text;  
+}  
+     </script>
+   
+</head>
+<body>
+    <center>
+    <h1>INICIO DE SESION</h1>  
+    <p>Por favor, introduce tu nombre completo:</p>  
+    
+    <input class="inputNombre" id="nombre" >
+    <br>  
+    
+    <button type="button" class="button" onclick="myFunction()">Iniciar Sesion</button>  
+    <p id="dato"></p>  
+</center>
+
+
+
+    <div class="principal">
+        <nav>
+            <h1>SEGUNDO EXAMEN</h1>
+
+            <div class="menu">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+        </nav>
+        <figure>
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/KZCV4ION55FIPFB6QENAFS2TUY.png" alt="">
+            
+            
+                
+            </figure>
+        <figure>
+            <img src="https://correodelsur.com/img/contents/images_840/2020/06/25/44d26673-a7f5-4d18-9200-a4a16d072ad3.jpg" alt="">
+            
+        </figure>
+
+        <main>
+            <section>
+                <center><h1>CASA DE CAMBIOS LOPEZ</h1></center>
+                
+            </section>
+
+            <section>
+                <p>Una casa de cambio es una organización o centro que permite a los clientes cambiar una divisa por otra. El término en francés bureau de change es ampliamente usado en Europa. También se anuncian con el término en inglés exchange. De esta manera, los visitantes pueden identificar fácilmente este servicio.</p>
+                <br>
+            </section>
+            <br>
+            <section>
+                <div class="container">
+
+                </div>
+                
+                <div class="container">
+                    <br>
+                    <h2>Conversor de moneda.</h2>
+                    <br>
+                <p>
+                <h2><label>bolivianos</label></h2>
+                <input class="inputNombre" id="inputBs" type="number" placeholder="bolivianos" oninput="bsDolares(this.value)" onchange="bsDolares(this.value)">
+                </p>
+                <p>
+                    <h2><label>dolares</label></h2>
+                <input class="inputNombre" class="input" id="inputDolares" type="number" placeholder="dolares" oninput="dolaresBs(this.value)" onchange="dolaresBs(this.value)">
+                </p>
+                </div>
+                <br>
+            </section>
+            <br>
+            <section>
+                <br>
+                <img src="https://www.bbva.com/wp-content/uploads/2016/09/cambio-de-divisa-1-1024x416.jpg">
+            </section>
+            <br>
+            <section>
+                <br>
+                <img src="https://images.squarespace-cdn.com/content/v1/554a5733e4b02559210e4177/1434320770519-Q9UXQUJ7QOMWX45060WL/image-asset.jpeg?format=1000w">
+            </section>
+        </main>
+        <br>
+        <footer>
+            <br>
+            
+            <br>
+            <div class="caja">
+                
+                    <p>ENLACES</p>
+                    <br>
+                    <p>Contactos</p>
+                    <p>Nosotros</p>
+                    <p>Mapa de Sitio</p>
+                    <p>Blog</p>
+    
+            </div>
+            <div class="caja">
+                
+                    <p>CAMBIOS</p>
+                    <br>
+                    <p>Dolares</p>
+                    <p>Bolivianos</p>
+                    <p>Euros</p>
+                    <p>Pesos Mexicanos</p>
+                
+            </div>
+            <div class="caja">
+                <p>REDES SOCIALES</p>
+                    <br>
+                    <p>Facebook</p>
+                    <p>Tik Tok</p>
+                    <p>Twither</p>
+                    <p>Whatsapp</p>
+            </div>
+            <div class="caja">
+                <p>¿TE AYUDAMOS?</p>
+                    <br>
+                    <p>Preguntas</p>
+                    <p>Garantias</p>
+                    <p>Devoluciones</p>
+                    <p>Tarifas</p>
+            </div>
+        </footer>
+    </div>
+
+    
+</body>
+</html>
